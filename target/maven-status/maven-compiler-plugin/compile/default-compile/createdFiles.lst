@@ -1,0 +1,4 @@
+com/back_hernansoft/back_hernansoft/entity/Producto.class
+com/back_hernansoft/back_hernansoft/BackHernansoftApplication.class
+com/back_hernansoft/back_hernansoft/controller/ProductoController.class
+com/back_hernansoft/back_hernansoft/repository/ProductoRepository.class
