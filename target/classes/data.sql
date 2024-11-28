@@ -1,4 +1,4 @@
--- Crear tabla de roles
+--Crear tabla de roles
 CREATE TABLE rol (
     id_rol BIGINT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL
@@ -52,6 +52,7 @@ VALUES
 
 -- Insertar relaciones entre usuarios y roles
 INSERT INTO usuario_rol (id_usuario, id_rol) VALUES (1, 1), (2, 2), (3, 2);
+
 
 -- Insertar datos iniciales en la tabla de productos
 INSERT INTO producto (nombre, descripcion, cantidad, precio) 

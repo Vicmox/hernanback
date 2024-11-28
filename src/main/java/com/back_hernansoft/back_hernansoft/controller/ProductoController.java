@@ -1,10 +1,17 @@
 package com.back_hernansoft.back_hernansoft.controller;
+
 import com.back_hernansoft.back_hernansoft.entity.Producto;
 import com.back_hernansoft.back_hernansoft.repository.ProductoRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/productos")
@@ -28,7 +35,7 @@ public class ProductoController {
         return productoRepository.save(producto);
     }
 
-    /*@PutMapping("/{id}")
+   /*  @PutMapping("/{id}")
     public Producto actualizar(@PathVariable Long id, @RequestBody Producto producto) {
         Producto existente = productoRepository.findById(id).orElse(null);
         if (existente != null) {

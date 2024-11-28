@@ -1,5 +1,6 @@
 package com.back_hernansoft.back_hernansoft.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,10 +13,15 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name="nombre")
     private String nombre;
+    @Column(name="descripcion")
     private String descripcion;
-    private Double precio;
+    @Column(name="cantidad")
     private Integer cantidad;
+    @Column(name="precio")
+    private Double precio;
+
 
     public long getId() {
         return id;
