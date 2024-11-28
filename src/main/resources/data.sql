@@ -1,7 +1,10 @@
---Crear tabla de roles
+CREATE DATABASE hernanback;
+USE hernanback;
+-- Crear tabla de roles
 CREATE TABLE rol (
-    id_rol BIGINT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(50) NOT NULL
+    id_rol BIGINT AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    PRIMARY KEY(id_rol)
 );
 
 -- Crear tabla de usuarios
