@@ -1,5 +1,4 @@
-CREATE DATABASE hernanback;
-USE hernanback;
+
 -- Crear tabla de roles
 CREATE TABLE rol (
     id_rol BIGINT AUTO_INCREMENT,
